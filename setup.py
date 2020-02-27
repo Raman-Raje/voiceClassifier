@@ -13,7 +13,7 @@ setup(
   author = 'Raman Shinde',
   author_email = 'raman.shinde15@gmail.com',
   url = 'https://github.com/Raman-Raje/voiceClassifier',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/Raman-Raje/voiceClassifier/archive/v_1.1.tar.gz',
+  download_url = 'https://github.com/Raman-Raje/voiceClassifier/archive/v_01.tar.gz',
   
   install_requires=[
           'forex-python',
