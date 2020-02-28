@@ -8,6 +8,8 @@ from sklearn.preprocessing import normalize
 
 class VoiceClassify():
 
+    """ The class for classifying voice samples. """
+
     def __init__(self):
 
         # loading the model
@@ -17,6 +19,15 @@ class VoiceClassify():
     @staticmethod
     def _process(fp):
 
+        """ 
+        This method is called internally to process the auido file.
+        :type fp: file_path of sample file
+        :param fp: file_path
+
+        :raises: Raises an excetion if something went wrong.
+
+        :rtype: Returns the numpy array fo features extracted from voice.
+        """
         fname = fp.split("/")[-1].split(".")[0]
         print(fname)
 
@@ -46,10 +57,32 @@ class VoiceClassify():
             print("Cleaning done...")
             print(e)
             
+    def classes_(self):
 
+        """ 
+        Returns the classes of the model
+        :type self:
+        :param self:
+    
+        :raises: None
+    
+        :rtype: classes_ object
+        """    
+        return self.clf.classes_
 
     def predict(self,fp):
 
+        """ Description
+        :type self: 
+        :param self:
+
+        :type fp: absolute path of sample audio file
+        :param fp: file path to be classified
+
+        :raises: NA
+
+        :rtype: predicted class and their probabilities and classes
+        """
         dp = self._process(fp)
 
         prediction,prob,classes = self.clf.predict(dp),self.clf.predict_proba(dp),self.clf.classes_

@@ -124,6 +124,9 @@ def train(samples):
     with open("./model/clf.pkl","wb") as f:
         dump(clf,f)
         print("Model saved successfully...")
+    
+    if os.path.exists("./data/"):
+        shutil.rmtree("./data/")    
 
 
 
