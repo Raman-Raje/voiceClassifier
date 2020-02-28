@@ -7,13 +7,13 @@ with open("README.md", 'r') as f:
 setup(
   name = 'voiceClassifier',
   packages = ['voiceClassifier'],
-  version = '1.1',
+  version = '1.1.1',
   license='MIT',        # https://help.github.com/articles/licensing-a-repository
   description = long_description,   # Give a short description about your library
   author = 'Raman Shinde',
   author_email = 'raman.shinde15@gmail.com',
   url = 'https://github.com/Raman-Raje/voiceClassifier',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/Raman-Raje/voiceClassifier/archive/v_01.tar.gz',
+  download_url = 'https://github.com/Raman-Raje/voiceClassifier/archive/v_01_1.tar.gz',
   
   install_requires=[
           'astroid==2.3.3',
