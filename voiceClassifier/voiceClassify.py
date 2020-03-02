@@ -1,7 +1,7 @@
 import os
 import shutil
 import numpy as np
-from utils import *
+from .utils import *
 from pickle import load,dump
 from sklearn.preprocessing import normalize
 
@@ -29,7 +29,6 @@ class VoiceClassify():
         :rtype: Returns the numpy array fo features extracted from voice.
         """
         fname = fp.split("/")[-1].split(".")[0]
-        print(fname)
 
         try:
 
@@ -72,7 +71,8 @@ class VoiceClassify():
 
     def predict(self,fp):
 
-        """ Description
+        """ 
+        Predicts the class label of the file.
         :type self: 
         :param self:
 

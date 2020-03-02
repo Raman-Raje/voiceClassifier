@@ -1,8 +1,8 @@
 import os
-import numpy as np
 import shutil
-from utils import *
-from config import *
+from .utils import *
+from .config import *
+import numpy as np
 
 from pickle import load,dump
 from sklearn import svm
