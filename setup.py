@@ -7,7 +7,7 @@ with open("README.md", 'r') as f:
 setup(
   name = 'voiceClassifier',
   packages = ['voiceClassifier'],
-  version = '1.1.2',
+  version = '1.1.2.1',
   license='MIT',        # https://help.github.com/articles/licensing-a-repository
   description="A simple package for voice classifiaction",
   long_description=long_description,
