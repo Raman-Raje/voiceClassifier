@@ -3,7 +3,7 @@ audioread==2.1.8
 cffi==1.14.0
 decorator==4.4.1
 isort==4.3.21
-joblib==0.14.1
+joblib==1.2.0
 lazy-object-proxy==1.4.3
 librosa==0.7.2
 llvmlite==0.31.0
